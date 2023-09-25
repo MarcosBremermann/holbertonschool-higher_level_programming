@@ -9,5 +9,5 @@ def square_matrix_simple(matrix=[]):
             sec_row.append(x ** 2)
 
         fir_row.append(sec_row)
-    
+
     return fir_row
