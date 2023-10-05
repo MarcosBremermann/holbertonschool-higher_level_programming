@@ -1,0 +1,29 @@
+=== Test Case 1 ===
+Description: Adding two positive integers
+Input: 1, 2
+Expected Output: 3
+
+=== Test Case 2 ===
+Description: Adding a positive integer and a negative integer
+Input: 100, -2
+Expected Output: 98
+
+=== Test Case 3 ===
+Description: Adding a single integer (default b value)
+Input: 2
+Expected Output: 100
+
+=== Test Case 4 ===
+Description: Adding two floating-point numbers
+Input: 100.3, -2.7
+Expected Output: 97
+
+=== Test Case 5 ===
+Description: Attempting to add an integer and a string
+Input: 4, "School"
+Expected Output: TypeError: b must be an integer
+
+=== Test Case 6 ===
+Description: Attempting to add None
+Input: None
+Expected Output: TypeError: a must be an integer
