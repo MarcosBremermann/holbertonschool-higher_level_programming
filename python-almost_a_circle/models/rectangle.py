@@ -110,7 +110,12 @@ class Rectangle(Base):
         return self.area
 
     def display(self):
+        """
+        Function that prints in stdout
+        the rectangle using #
+        """
         for i in range(self.height):
             for x in range(self.width):
                 print('#', end="")
             print()
+        return self.display
