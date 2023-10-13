@@ -119,3 +119,11 @@ class Rectangle(Base):
                 print('#', end="")
             print()
         return self.display
+
+    def __str__(self):
+        id2 = self.id
+        x2 = self.x
+        y2 = self.y
+        width2 = self.width
+        height2 = self.height
+        return (f"[Rectangle] ({id2}) {x2}/{y2} - {width2}/{height2}")
