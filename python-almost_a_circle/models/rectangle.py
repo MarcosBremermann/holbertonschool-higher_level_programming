@@ -114,13 +114,24 @@ class Rectangle(Base):
         Function that prints in stdout
         the rectangle using #
         """
+        for u in range(self.y):
+            print()
+
         for i in range(self.height):
-            for x in range(self.width):
+            for p in range(self.x):
+                print(end=" ")
+            for o in range(self.width):
                 print('#', end="")
             print()
         return self.display
 
     def __str__(self):
+        """
+        Function that returns a specific
+        phrase to be done with the values
+        of the variables
+        """
+
         id2 = self.id
         x2 = self.x
         y2 = self.y
