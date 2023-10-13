@@ -169,6 +169,10 @@ class Rectangle(Base):
         return (f"[Rectangle] ({id2}) {x2}/{y2} - {width2}/{height2}")
 
     def to_dictionary(self):
+        """
+        Function that defines the dictionary
+        for id, height, width, x and y
+        """
         return {
             'id': self.id,
             'width': self.width,
