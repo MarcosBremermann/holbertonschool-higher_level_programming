@@ -52,7 +52,21 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
+        """
+        Static method that returns the list
+        of the JSON string representation
+        """
         if json_string is None or json_string == '[]':
             return []
         tempo = json.loads(json_string)
         return tempo
+
+    @classmethod
+    def create(cls, **dictionary):
+        dummy = 0
+        if cls.__name__ == 'Rectangle':
+            dummy = cls(1, 1)
+        elif cls.__name__ == 'Square':
+            dummy = cls(1)
+        dummy.update(**dictionary)
+        return dummy
