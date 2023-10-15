@@ -4,6 +4,7 @@ base.py - Defines the Base class, the foundation\
 for all other classes in the project.
 """
 import json
+import os
 
 
 class Base:
@@ -74,3 +75,20 @@ class Base:
             dummy = cls(1)
         dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        """
+        Class method that that returns a
+        list of instances
+        """
+        file = cls.__name__ + ".json"
+        empt_list = []
+        lis_cla = []
+        if os.path.exists(file):
+            with open(file, 'r') as f:
+                x = f.read()
+                lis_cla = cls.from_json_string(x)
+                for i in lis_cla:
+                    empt_list.append(cls.create(**i))
+        return empt_list
