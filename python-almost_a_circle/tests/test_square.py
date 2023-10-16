@@ -7,17 +7,29 @@ import unittest
 from models.square import Square
 
 class TestSquare(unittest.TestCase):
+    """
+    Class that tests the Square class
+    """
     def test_str(self):
+        """
+        Tests the str overwrite
+        """
         s = Square(3, 2, 1, 5)
         self.assertEqual(str(s), "[Square] (<5>) <2>/<1> - <3>")
 
     def test_update(self):
+        """
+        Tests the update method
+        """
         s = Square(3, 2, 1, 5)
         s.update(10)
         self.assertEqual(str(s), "[Square] (<10>) <2>/<1> - <3>")
         s.update(20, 4)
 
     def test_to_dictionary(self):
+        """
+        Tests the dictionary
+        """
         s = Square(3, 2, 1, 5)
         d = s.to_dictionary()
         expected = {
