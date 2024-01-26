@@ -8,6 +8,6 @@ if __name__ == "__main__":
     if sub(a, b):
         print("{0} - {1} = {2}".format(a, b, sub(a, b)))
     if mul(a, b):
-        print("{0} * {1} = {2}".format(a, b, mul(a, b)))
+        print("{0} * {1} = {2}".format(a, b, a * b))
     if div(a, b):
         print("{0} / {1} = {2}".format(a, b, div(a, b)))
