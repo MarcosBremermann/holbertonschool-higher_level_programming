@@ -5,7 +5,7 @@ def list_division(my_list_1, my_list_2, list_length):
     try:
         for i in range(list_length):
             if my_list_1[i] is not None and my_list_2[i] is not None:
-                if isinstance(my_list_1[i], (int, float)) /
+                if isinstance(my_list_1[i], (int, float)) \
                 and isinstance(my_list_2[i], (int, float)):
                     if my_list_2[i] != 0:
                         div_list.append(my_list_1[i] / my_list_2[i])
