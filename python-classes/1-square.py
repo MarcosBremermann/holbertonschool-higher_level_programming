@@ -11,4 +11,4 @@ class Square:
         """
         Initialization for priv. inst. att. size
         """
-        self.__size__ = size
+        self.__size = size
