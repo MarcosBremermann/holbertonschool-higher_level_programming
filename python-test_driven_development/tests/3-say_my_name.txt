@@ -1,0 +1,17 @@
+This file is for the testing of the say_my_name in 3-say_my_name
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+>>> say_my_name("Jhon", "Smith")
+My name is Jhon Smith
+
+>>> say_my_name("Marcos", "Bremermann")
+My name is Marcos Bremermann
+
+>>> say_my_name("Pepper")
+My name is Pepper
+
+>>> say_my_name("Marcos", 0123)
+'last_name must be a string'
+
+>>> say_my_name(2, "Bremermann")
+'first_name must be a string'
