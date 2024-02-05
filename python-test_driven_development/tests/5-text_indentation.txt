@@ -1,0 +1,18 @@
+This file is for the testing of the text_indentation in 5-text_indentation
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> text_indentation(""" This is a. Test text""")
+This is a.
+<BLANKLINE>
+Test text
+
+>>> text_indentation(""" What is your name? My name is Marcos Bremermann. Thank you.""")
+What is your name?
+<BLANKLINE>
+My name is Marcos Bremermann.
+<BLANKLINE>
+Thank you.
+<BLANKLINE>
+
+>>> text_indentation(list)
+TypeError: text must be a string
