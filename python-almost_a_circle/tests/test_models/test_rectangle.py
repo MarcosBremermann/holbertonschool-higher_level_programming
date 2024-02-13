@@ -70,3 +70,6 @@ class TestRectangleClass(unittest.TestCase):
         self.assertRaises(ValueError)
         test_y = Rectangle(5, 8, 3, 'This shouldnt work')
         self.assertRaises(TypeError)
+
+if __name__ == '__main__':
+    unittest.main()
