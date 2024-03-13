@@ -1,3 +1,3 @@
 -- Prints description of first_table
 
-SHOW TABLES FROM `first_database`;
+SHOW TABLES FROM hbtn_0c_0;
