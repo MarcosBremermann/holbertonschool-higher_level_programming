@@ -1,3 +1,3 @@
 --Shows Databases
 
-SELECT * DATABASES;
+SHOW DATABASES;
